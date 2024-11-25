@@ -1,0 +1,83 @@
+/* stickyNavbar.css */
+
+/* General navbar styles */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    background-color: white; /* White background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000; /* Ensure it stays on top */
+  }
+  
+  .sticky-navbar-container {
+    display: flex;
+    justify-content: center; /* Center the menu */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .sticky-navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+  }
+  
+  .sticky-navbar-menu-item {
+    margin: 0 20px; /* Space out the items */
+    position: relative; /* Required for the bottom border */
+  }
+  
+  .sticky-navbar-menu-item a {
+    text-decoration: none;
+    color: #333; /* Dark text for contrast */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 4px; /* Rounded corners for the menu items */
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block; /* Allows the border effect to be applied correctly */
+  }
+  
+  /* Hover effect for menu items */
+  .sticky-navbar-menu-item a:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  /* Active page - thick green bottom border */
+  .sticky-navbar-menu-item.active a {
+    border-bottom: 4px solid green; /* Green bottom border for active page */
+    color: green; /* Optional: Change text color to green for active page */
+  }
+  
+  /* Hover effect for menu items with active state */
+  .sticky-navbar-menu-item a:hover {
+    border-bottom: 4px solid green; /* Green bottom border on hover */
+    color: green; /* Optional: Change text color to green on hover */
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .sticky-navbar-container {
+      padding: 0 15px;
+    }
+  
+    .sticky-navbar-menu {
+      flex-direction: column; /* Stack menu items vertically on smaller screens */
+    }
+  
+    .sticky-navbar-menu-item {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .sticky-navbar-menu-item a {
+      display: block;
+      padding: 12px 0;
+      text-align: center;
+    }
+  }
+  

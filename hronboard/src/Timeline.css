@@ -1,0 +1,67 @@
+/* Timeline.css */
+.timeline-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border: 2px solid #00B2D7;
+  border-radius: 8px;
+  padding: 20px;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  max-width: 180px;
+}
+
+.timeline-step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #E7EAEE;
+  border-radius: 50%;
+}
+
+.step-number {
+  font-size: 16px;
+  font-weight: 500;
+  color: #191D23;
+}
+
+.timeline-details {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.timeline-date {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6B6B6B;
+}
+
+.timeline-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #191D23;
+  margin-top: 4px;
+}
+
+.divider {
+  width: 1px;
+  height: 133px;
+  background: linear-gradient(180deg, #00B2D7 0%, #00C58F 100%);
+  margin: 0 auto;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .divider {
+    display: block;
+  }
+}

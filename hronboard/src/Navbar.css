@@ -1,0 +1,75 @@
+/* navbar.css */
+
+/* General navbar styles */
+.navbar {
+    background-color: #007BFF; /* Blue background */
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-logo img {
+    height: 40px;
+  }
+  
+  .navbar-menu {
+    text-align: right;
+  }
+  
+  .navbar-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+  }
+  
+  .navbar-menu-item {
+    margin-left: 20px;
+  }
+  
+  .navbar-menu-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover effect for menu items */
+  .navbar-menu-item a:hover {
+    background-color: white;
+    color: #007BFF;
+    border-radius: 4px;
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-menu-list {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-menu-item {
+      margin: 5px 0;
+      width: 100%;
+    }
+  
+    .navbar-menu-item a {
+      display: block;
+      padding: 10px;
+      text-align: left;
+    }
+  }
+  
